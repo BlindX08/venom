@@ -56,7 +56,7 @@ def send_not_approved_message(chat_id):
 
 def send_main_buttons(chat_id):
     markup = ReplyKeyboardMarkup(row_width=2, resize_keyboard=True, one_time_keyboard=True)
-    markup.add(KeyboardButton("ATTACK"), KeyboardButton("Start Attack 🚀"), KeyboardButton("Stop Attack"))
+    markup.add(KeyboardButton("/Attack"), KeyboardButton("Start Attack 🚀"), KeyboardButton("Stop Attack"))
     bot.send_message(chat_id, "*Choose an action:*", reply_markup=markup, parse_mode='Markdown')
 
 
